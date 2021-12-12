@@ -97,10 +97,10 @@ Total time: 57.4ms
 
 ### Day 5
 
-✅ Part 1 (in 233ms)  
-✅ Part 2 (in 109ms)
+✅ Part 1 (in 214ms)  
+✅ Part 2 (in 77.7ms)
 
-Total time: 342ms
+Total time: 291ms
 
 
 ### Day 6
@@ -121,10 +121,10 @@ Total time: 0.92ms
 
 ### Day 8
 
-✅ Part 1 (in 1.61ms)  
-✅ Part 2 (in 5.99ms)
+✅ Part 1 (in 0.76ms)  
+✅ Part 2 (in 6.59ms)
 
-Total time: 7.60ms
+Total time: 7.35ms
 
 
 ### Day 9
