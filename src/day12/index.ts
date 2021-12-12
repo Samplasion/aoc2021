@@ -82,38 +82,37 @@ const part1 = (rawInput: string) => {
   return paths.size;
 };
 
-function count<T>(arr: T[], predicate: (t: T) => boolean) {
-  return arr.reduce((acc, t) => predicate(t) ? acc + 1 : acc, 0);
+function hasDoubleNodes(array: string[]): boolean {
+  var smallNodes = array.filter((n) => n[0].toUpperCase() != n[0]);
+  return smallNodes.length > new Set(smallNodes).size;
 }
 
 const part2 = (rawInput: string) => {
-  // const input = parseInput(rawInput, true);
-  // let current = input.get("start")!;
-
-  // const paths = new Set<string>();
-  // // Where "twiced" means "visited twice"
-  // function recurse(node: Node, subpath: Array<string>, twicedNode: string | null, actuallyTwiced = false) {
-  //   // console.log(node.name);
-  //   for (const n of [...node.paths, ...subpath]) {
-  //     const subnode = input.get(n)!;
-  //     if (subpath.includes(n) && !subnode.isLarge && actuallyTwiced) {
-  //       return;
-  //     }
-  //     // If the subnode is large, we can visit it any number of times
-  //     // If the subnode is not large, we can visit it only twice
-  //     if (!twicedNode && !actuallyTwiced && !subnode.isLarge) {
-  //       recurse(subnode, [...subpath, n], n, false);
-  //       actuallyTwiced = true;
-  //     }
-  //     recurse(subnode, [...subpath, n], twicedNode, actuallyTwiced);
-  //   }
-  //   if (node.isEnd)
-  //     paths.add(subpath.join(","));
-  // }
+  const input = parseInput(rawInput);
+  let paths = [[]] as string[][];
   
-  // recurse(current, [current.name], null);
+  while (paths.some(path => !path.includes('end'))) {
+    const innerPaths: string[][] = [];
 
-  // return paths.size;
+    for (const path of paths) {
+      if (path.includes('end')) {
+        innerPaths.push(path);
+        continue;
+      }
+
+      const node = input.get(path[path.length - 1] ?? "start")!;
+      node.paths.filter(n => n != "start").forEach(n => {
+        const subnode = input.get(n)!;
+        if (!path.includes(n) || subnode.isLarge || !hasDoubleNodes(path)) {
+          innerPaths.push([...path, n]);
+        }
+      });
+    }
+
+    paths = innerPaths;
+  }
+
+  return paths.length;
 };
 
 const example = `
@@ -181,14 +180,14 @@ run({
         input: example,
         expected: 36,
       },
-      // {
-      //   input: slightlyLarger,
-      //   expected: 103,
-      // },
-      // {
-      //   input: evenLarger,
-      //   expected: 3509,
-      // },
+      {
+        input: slightlyLarger,
+        expected: 103,
+      },
+      {
+        input: evenLarger,
+        expected: 3509,
+      },
     ],
     solution: part2,
   },
