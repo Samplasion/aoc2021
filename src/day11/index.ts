@@ -1,4 +1,4 @@
-import run from "aocrunner";
+import run from "https://deno.land/x/aoc@0.0.1-alpha.9/mod.ts";
 
 type Coordinate = [x: number, y: number];
 
@@ -57,7 +57,7 @@ const part1 = (rawInput: string) => {
   const input = parseInput(rawInput);
   let flashes = 0;
   let flashed: Coordinate[] = [];
-  
+
   const step = getStep(input, flashed);
 
   for (let i = 0; i < 100; i++) {
@@ -74,7 +74,7 @@ const part2 = (rawInput: string) => {
 
   const step = getStep(input, flashed);
 
-  for (let i = 1;; i++) {
+  for (let i = 1; ; i++) {
     if (step().length == 100)
       return i;
   }

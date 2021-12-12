@@ -1,5 +1,5 @@
-import run from "aocrunner";
-import School from "./school.js";
+import run from "https://deno.land/x/aoc@0.0.1-alpha.9/mod.ts";
+import School from "./school.ts";
 
 const parseInput = (rawInput: string) => {
   return rawInput.split(",").map(Number);

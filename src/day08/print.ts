@@ -1,4 +1,4 @@
-import sevenSegment from "./sevensegment.js";
+import sevenSegment from "./sevensegment.ts";
 
 const blueprint = ` aaaa 
 b    c

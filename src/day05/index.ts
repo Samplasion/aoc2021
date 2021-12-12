@@ -1,5 +1,5 @@
-import run from "aocrunner";
-import Grid from "./grid.js";
+import run from "https://deno.land/x/aoc@0.0.1-alpha.9/mod.ts";
+import Grid from "./grid.ts";
 
 type Point = [x: number, y: number];
 type Vector = [start: Point, end: Point];

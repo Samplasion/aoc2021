@@ -1,4 +1,4 @@
-import run from "aocrunner";
+import run from "https://deno.land/x/aoc@0.0.1-alpha.9/mod.ts";
 
 const parseInput = (rawInput: string) => {
   return rawInput.split("\n").map(row => row.split("").map(Number));
@@ -25,7 +25,7 @@ const getLowPoints = (input: number[][]) => {
 
 const part1 = (rawInput: string) => {
   const input = parseInput(rawInput);
-  
+
   return getLowPoints(input).reduce((acc, [x, y]) => acc + input[x][y] + 1, 0);
 };
 
@@ -66,7 +66,7 @@ const part2 = (rawInput: string) => {
 
   const basins = lowPoints.map(([x, y]) => getBasin(x, y));
   basins.sort((a, b) => b - a);
-  
+
   return basins.slice(0, 3).reduce((acc, basin) => acc * basin, 1);
 };
 

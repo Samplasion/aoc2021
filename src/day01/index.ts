@@ -1,4 +1,4 @@
-import run from "aocrunner";
+import run from "https://deno.land/x/aoc@0.0.1-alpha.9/mod.ts";
 
 const parseInput = (rawInput: string) => rawInput.split("\n").map(Number);
 

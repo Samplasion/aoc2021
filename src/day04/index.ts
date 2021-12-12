@@ -1,5 +1,5 @@
-import run from "aocrunner";
-import Board from "./board.js";
+import run from "https://deno.land/x/aoc@0.0.1-alpha.9/mod.ts";
+import Board from "./board.ts";
 
 const parseInput = (rawInput: string) => {
   const numbers: number[] = rawInput.split("\n\n")[0].split(",").map(Number);

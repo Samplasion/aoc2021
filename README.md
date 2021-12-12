@@ -1,64 +1,60 @@
 <!-- Entries between SOLUTIONS and RESULTS tags are auto-generated -->
 
-[![AoC](https://badgen.net/badge/AoC/2021/blue)](https://adventofcode.com/2021)
-[![Node](https://badgen.net/badge/Node/v16.13.0+/blue)](https://nodejs.org/en/download/)
-![Language](https://badgen.net/badge/Language/TypeScript/blue)
-[![Template](https://badgen.net/badge/Template/aocrunner/blue)](https://github.com/caderek/aocrunner)
-
 # 🎄 Advent of Code 2021 🎄
+
+[![AoC](https://img.shields.io/badge/AoC-2021-blue.svg?style=flat-square)](https://adventofcode.com/)
+[![Deno](https://img.shields.io/badge/Deno-1.16.4-blue.svg?style=flat-square)](https://deno.land/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.4.2-blue.svg?style=flat-square)](https://www.typescriptlang.org/)
+[![Template](https://img.shields.io/badge/Template-deno--aoc-blue.svg?style=flat-square)](https://github.com/samplasion/deno-aoc) [![Based on](https://img.shields.io/badge/Based%20on-aocrunner-blue.svg?style=flat-square)](https://github.com/caderek/aocrunner)
 
 ## Solutions
 
 <!--SOLUTIONS-->
-
-[![Day](https://badgen.net/badge/01/%E2%98%85%E2%98%85/green)](src/day01)
-[![Day](https://badgen.net/badge/02/%E2%98%85%E2%98%85/green)](src/day02)
-[![Day](https://badgen.net/badge/03/%E2%98%85%E2%98%85/green)](src/day03)
-[![Day](https://badgen.net/badge/04/%E2%98%85%E2%98%85/green)](src/day04)
-[![Day](https://badgen.net/badge/05/%E2%98%85%E2%98%85/green)](src/day05)
-[![Day](https://badgen.net/badge/06/%E2%98%85%E2%98%85/green)](src/day06)
-[![Day](https://badgen.net/badge/07/%E2%98%85%E2%98%85/green)](src/day07)
-[![Day](https://badgen.net/badge/08/%E2%98%85%E2%98%85/green)](src/day08)
-[![Day](https://badgen.net/badge/09/%E2%98%85%E2%98%85/green)](src/day09)
-[![Day](https://badgen.net/badge/10/%E2%98%85%E2%98%85/green)](src/day10)
-[![Day](https://badgen.net/badge/11/%E2%98%85%E2%98%85/green)](src/day11)
-![Day](https://badgen.net/badge/12/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/13/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/14/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/15/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/16/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/17/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/18/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/19/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/20/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/21/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/22/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/23/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/24/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/25/%E2%98%86%E2%98%86/gray)
-
+[![Day 01](https://img.shields.io/badge/Day%2001-%E2%98%85%E2%98%85-brightgreen.svg?style=flat-square)](/src/day01)
+[![Day 02](https://img.shields.io/badge/Day%2002-%E2%98%85%E2%98%85-brightgreen.svg?style=flat-square)](/src/day02)
+[![Day 03](https://img.shields.io/badge/Day%2003-%E2%98%85%E2%98%85-brightgreen.svg?style=flat-square)](/src/day03)
+[![Day 04](https://img.shields.io/badge/Day%2004-%E2%98%85%E2%98%85-brightgreen.svg?style=flat-square)](/src/day04)
+[![Day 05](https://img.shields.io/badge/Day%2005-%E2%98%85%E2%98%85-brightgreen.svg?style=flat-square)](/src/day05)
+[![Day 06](https://img.shields.io/badge/Day%2006-%E2%98%85%E2%98%85-brightgreen.svg?style=flat-square)](/src/day06)
+[![Day 07](https://img.shields.io/badge/Day%2007-%E2%98%85%E2%98%85-brightgreen.svg?style=flat-square)](/src/day07)
+[![Day 08](https://img.shields.io/badge/Day%2008-%E2%98%85%E2%98%85-brightgreen.svg?style=flat-square)](/src/day08)
+[![Day 09](https://img.shields.io/badge/Day%2009-%E2%98%85%E2%98%85-brightgreen.svg?style=flat-square)](/src/day09)
+[![Day 10](https://img.shields.io/badge/Day%2010-%E2%98%85%E2%98%85-brightgreen.svg?style=flat-square)](/src/day10)
+[![Day 11](https://img.shields.io/badge/Day%2011-%E2%98%85%E2%98%85-brightgreen.svg?style=flat-square)](/src/day11)
+![Day 12](https://img.shields.io/badge/Day%2012-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 13](https://img.shields.io/badge/Day%2013-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 14](https://img.shields.io/badge/Day%2014-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 15](https://img.shields.io/badge/Day%2015-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 16](https://img.shields.io/badge/Day%2016-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 17](https://img.shields.io/badge/Day%2017-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 18](https://img.shields.io/badge/Day%2018-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 19](https://img.shields.io/badge/Day%2019-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 20](https://img.shields.io/badge/Day%2020-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 21](https://img.shields.io/badge/Day%2021-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 22](https://img.shields.io/badge/Day%2022-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 23](https://img.shields.io/badge/Day%2023-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 24](https://img.shields.io/badge/Day%2024-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
+![Day 25](https://img.shields.io/badge/Day%2025-%E2%98%86%E2%98%86-lightgrey.svg?style=flat-square)
 <!--/SOLUTIONS-->
 
-_Click a badge to go to the specific day._
+_Click a badge to go to the specific day's solution._
 
 ---
 
 ## Installation
 
-```
-yarn
-```
+[Detailed and up-to-date installation instructions](https://github.com/samplasion/deno-aoc)
 
-## Running in dev mode
+## Running a solution
 
 ```
-yarn start <day>
+aoc run <day>
 ```
 
 Example:
 
 ```
-yarn start 1
+aoc run 25
 ```
 
 ---
@@ -67,185 +63,204 @@ yarn start 1
 
 <!--RESULTS-->
 
-```
-Day 01
-Time part 1: 0.37ms
-Time part 2: 1.74ms
-Both parts: 2.11ms
-```
+### Day 1
 
-```
-Day 02
-Time part 1: 1.15ms
-Time part 2: 1.13ms
-Both parts: 2.28ms
-```
+✅ Part 1 (in 0.74ms)  
+✅ Part 2 (in 0.92ms)
 
-```
-Day 03
-Time part 1: 4.92ms
-Time part 2: 3.92ms
-Both parts: 8.84ms
-```
+Total time: 1.66ms
 
-```
-Day 04
-Time part 1: 21.2ms
-Time part 2: 5.78ms
-Both parts: 26.98ms
-```
 
-```
-Day 05
-Time part 1: 59.44ms
-Time part 2: 56.84ms
-Both parts: 116.28ms
-```
+### Day 2
 
-```
-Day 06
-Time part 1: 0.17ms
-Time part 2: 0.43ms
-Both parts: 0.6ms
-```
+✅ Part 1 (in 1.70ms)  
+✅ Part 2 (in 1.13ms)
 
-```
-Day 07
-Time part 1: 0.91ms
-Time part 2: 0.45ms
-Both parts: 1.36ms
-```
+Total time: 2.83ms
 
-```
-Day 08
-Time part 1: 1.61ms
-Time part 2: 5.99ms
-Both parts: 7.6000000000000005ms
-```
 
-```
-Day 09
-Time part 1: 4.81ms
-Time part 2: 10.25ms
-Both parts: 15.06ms
-```
+### Day 3
 
-```
-Day 10
-Time part 1: 1.64ms
-Time part 2: 1.61ms
-Both parts: 3.25ms
-```
+✅ Part 1 (in 22.4ms)  
+✅ Part 2 (in 22.0ms)
 
-```
-Day 11
-Time part 1: 2.44ms
-Time part 2: 9.53ms
-Both parts: 11.97ms
-```
+Total time: 44.4ms
 
-```
-Day 12
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
 
-```
-Day 13
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
+### Day 4
 
-```
-Day 14
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
+✅ Part 1 (in 26.3ms)  
+✅ Part 2 (in 31.0ms)
 
-```
-Day 15
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
+Total time: 57.4ms
 
-```
-Day 16
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
 
-```
-Day 17
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
+### Day 5
 
-```
-Day 18
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
+✅ Part 1 (in 233ms)  
+✅ Part 2 (in 109ms)
 
-```
-Day 19
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
+Total time: 342ms
 
-```
-Day 20
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
 
-```
-Day 21
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
+### Day 6
 
-```
-Day 22
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
+✅ Part 1 (in 0.15ms)  
+✅ Part 2 (in 0.27ms)
 
-```
-Day 23
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
+Total time: 0.42ms
 
-```
-Day 24
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
 
-```
-Day 25
-Time part 1: -
-Time part 2: -
-Both parts: -
-```
+### Day 7
 
-```
-Total stars: 19/50
-Total time: 199.3113869999999ms
-```
+✅ Part 1 (in 0.55ms)  
+✅ Part 2 (in 0.37ms)
+
+Total time: 0.92ms
+
+
+### Day 8
+
+✅ Part 1 (in 1.61ms)  
+✅ Part 2 (in 5.99ms)
+
+Total time: 7.60ms
+
+
+### Day 9
+
+✅ Part 1 (in 4.89ms)  
+✅ Part 2 (in 16.9ms)
+
+Total time: 21.7ms
+
+
+### Day 10
+
+✅ Part 1 (in 5.04ms)  
+✅ Part 2 (in 2.34ms)
+
+Total time: 7.37ms
+
+
+### Day 11
+
+✅ Part 1 (in 19.8ms)  
+✅ Part 2 (in 140ms)
+
+Total time: 160ms
+
+
+### Day 12
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 13
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 14
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 15
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 16
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 17
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 18
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 19
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 20
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 21
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 22
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 23
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 24
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
+
+
+### Day 25
+
+❌ Part 1  
+❌ Part 2
+
+Total time: 0.00ms
 
 <!--/RESULTS-->
 
