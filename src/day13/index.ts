@@ -1,6 +1,7 @@
 import run from "https://deno.land/x/aoc@0.0.1-alpha.9/mod.ts";
 import Grid from "./grid.ts";
 import { toLetters } from "./letters.ts";
+import CustomSet from "./set.ts";
 
 export enum FoldDirection {
   Up = "y",
@@ -11,39 +12,69 @@ export type Fold = [direction: FoldDirection, line: number]
 const parseInput = (rawInput: string) => {
   const [dots, folds] = rawInput.split("\n\n").slice(0, 2);
   const parsedDots = dots.split("\n").map((row) => row.split(",").map(Number) as [number, number]);
-  const width = parsedDots.reduce((max, row) => Math.max(max, row[0]), 0) + 1; // +1 because those are indices
-  const height = parsedDots.reduce((max, row) => Math.max(max, row[1]), 0) + 1; // +1 because those are indices
-  const grid: boolean[][] = new Array(height).fill(false).map((_) => new Array(width).fill(false));
-  for (const [x, y] of parsedDots) {
-    grid[y] = grid[y] ?? Array(width).fill(false);
-    grid[y][x] = true;
+  
+  const set = new CustomSet<[x: number, y: number]>();
+
+  for (const dot of parsedDots) {
+    set.add(dot);
   }
+
   const parsedFolds: Fold[] = [];
   for (const line of folds.trim().split("\n")) {
     const [direction, size] = line.replace("fold along ", "").split("=");
     parsedFolds.push([direction as FoldDirection, Number(size)]);
   }
-  const firstFoldLeft = parsedFolds.find(([direction]) => direction === FoldDirection.Left);
-  return [new Grid(grid, firstFoldLeft![1] * 2 + 1), parsedFolds] as const;
+
+  return [set, parsedFolds] as const;
 };
 
-const part1 = (rawInput: string) => {
-  let [grid, folds] = parseInput(rawInput);
-  grid = grid.fold(folds[0]);
+function fold(set: CustomSet<[x: number, y: number]>, [direction, line]: Fold) {
+  const newSet = new CustomSet<[x: number, y: number]>();
+  for (const dot of set) {
+    const [x, y] = dot;
+    if (direction === FoldDirection.Up) {
+      if (y > line) {
+        const delta = 2 * (y - line);
+        newSet.add([x, y - delta]);
+      } else {
+        newSet.add([x, y]);
+      }
+    } else {
+      if (x > line) {
+        const delta = 2 * (x - line);
+        newSet.add([x - delta, y]);
+      } else {
+        newSet.add([x, y]);
+      }
+    }
+  }
+  return newSet;
+}
 
-  return grid.dots;
+function toGrid(set: CustomSet<[x: number, y: number]>) {
+  const width = set.reduce((max, dot) => Math.max(max, dot[0]), 0) + 1;
+  const height = set.reduce((max, dot) => Math.max(max, dot[1]), 0) + 1;
+  const booleans = new Array(height).fill(false).map(() => new Array(width).fill(false));
+  for (const dot of set) {
+    booleans[dot[1]][dot[0]] = true;
+  }
+  return new Grid(booleans, width);
+}
+
+const part1 = (rawInput: string) => {
+  const [grid, folds] = parseInput(rawInput);
+
+  return fold(grid, folds[0]).size;
 };
 
 const part2 = (rawInput: string) => {
   let [grid, folds] = parseInput(rawInput);
 
-  for (const fold of folds) {
-    grid = grid.fold(fold);
+  for (const foldObj of folds) {
+    grid = fold(grid, foldObj);
   }
 
-  console.log(grid.toString(true), "\n");
-
-  return toLetters(grid);
+  return toLetters(toGrid(grid));
 };
 
 const example = `
